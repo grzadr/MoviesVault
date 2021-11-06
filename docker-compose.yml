@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  _build_image:
+    build:
+      dockerfile: Dockerfile
+      args:
+        POETRY_VERSION: ${POETRY_VERSION}
+        PROJECT_ENV: ${PROJECT_ENV}
+    image: moviesvault:${PROJECT_ENV}
+    container_name: moviesvault_image_builder
+    command: ["echo", "Build completed!"]
