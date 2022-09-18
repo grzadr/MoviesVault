@@ -1,15 +1,16 @@
 [tool.poetry]
-name = "MoviesVault"
+name = "moviesvaulttoolkit"
 version = "0.1.0"
 description = ""
 authors = ["Adrian Grzemski <adrian.grzemski@gmail.com>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 
-[tool.poetry.dev-dependencies]
-pytest = "^5.4"
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.2"
 
 [build-system]
-requires = ["poetry-core>=1.1"]
+requires = ["poetry-core>=1.2"]
 build-backend = "poetry.core.masonry.api"

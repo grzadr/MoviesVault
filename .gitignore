@@ -1,1 +1,5 @@
 *.sw?
+dist/
+.pytest_cache
+poetry.lock
+__pycache__
